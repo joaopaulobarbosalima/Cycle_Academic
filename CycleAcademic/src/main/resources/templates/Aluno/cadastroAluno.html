@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8"/>
+<!-- Bootstrap core CSS -->
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<title>Cadastro</title>
+
+</head>
+<body>
+
+	<div class="container" id="cadastro">
+		<form th:action="@{salvar}" th:object="${aluno}"  method="POST">
+			<div class="form-group">
+				<label for="nome">Nome</label> <input type="text"
+					class="form-control" id="nome" placeholder="nome" th:field="*{nome}">
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label> <input type="email"
+					class="form-control" id="email" placeholder="name@example.com" th:field="*{email}">
+			</div>
+			<div class="form-group">
+				<label for="InputPassword">Senha</label> <input type="password"
+					class="form-control" id="senha" placeholder="senha" th:field="*{senha}">
+			</div>
+
+			<div class="form-group">
+				<label>Curso</label>
+				<select class="custom-select mr-sm-2" id="curso" >
+					<option selected>...</option>
+					<option value="1">Sistemas</option>
+					<option value="2">Redes</option>
+					<option value="3">ADS</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>
