@@ -1,0 +1,22 @@
+Controllers a serem desenvolvidos:
+
+Zaqueu:
+Cadastro Aluno;
+Login;
+DashboardController;
+
+
+Italo:
+AdmnistradorController;
+CadastroCurso;
+CadastroModulo;
+
+Ezequiel:
+EditarCurso;
+ListarDisciplinas;
+CadastroDisciplina;
+AtualizarDisciplina;
+
+Douglas:
+PexController;
+InformaçõesAlunoController;
